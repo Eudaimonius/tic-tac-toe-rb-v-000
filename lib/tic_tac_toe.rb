@@ -41,9 +41,7 @@ end
 
 def valid_move?(board, index)
 #binding.pry
-  if position_taken?(board, index)==false
-    return true
-  elsif board[index].nil?
+if board[index].nil?
     return false
   end
 
