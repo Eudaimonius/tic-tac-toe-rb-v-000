@@ -42,8 +42,9 @@ end
 def valid_move?(board, index)
 #binding.pry
 if board[index].nil?
-    return false
-  end
+  return false
+elsif board[index].
+    end
 
 
 #binding.pry
