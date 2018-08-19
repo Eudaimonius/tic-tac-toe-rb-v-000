@@ -41,21 +41,31 @@ end
 
 def valid_move?(board, index)
 
+  if position_taken?(board, index)==true
+    return true
+  elsif position_taken?(board,index)==false
+    return false
+  end
+    
+
 #binding.pry
 
-while index <= 0 && index >= 8
 
-  if board[index].include?("X")
-    return false
-    elsif board[index].include?("O")
-      return false
-    elsif board[index].include?(" ")
-      return true
-    end
-end
-if index < -1 || index > 8
+#board[index].include?("X")
+
+#board[index].include?("O")
+
+ board.any?{|i| i==" "}
+ if board.any?{|i| i==" "}==true
+   return false
+ end
+
+=begin
+if index <= -1 || index > 8
   return false
-end
+  binding.pry
+=end
+
 end
 
 
